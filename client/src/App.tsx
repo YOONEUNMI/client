@@ -13,6 +13,7 @@ function App() {
         userInfo: state.userInfo,
       } as {userInfo: UserState})
   );
+
   return (
     <div className="App">
       {userInfo.userId.length > 0 ? <Layout /> : <Login />}
